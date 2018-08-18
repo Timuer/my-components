@@ -17,7 +17,7 @@ var bindEvent = function(elem, eventName, callback) {
 }
 
 var bindAll = function(elems, eventName, callback) {
-    for (e of elems) {
+    for (var e of elems) {
         bindEvent(e, eventName, callback)
     }
 }
